@@ -9,7 +9,7 @@ int main() {
 
     //Váriaveis necessárias criadas e inicializadas (=).
 
-    char estado = 'A';            //Estado designado por uma letra.
+    char estado = 'A';            //Estado designado por uma letra de A até H.
     char cidade[30] = "Campinas"; 
     int carta = 1;                //Numeração da carta.
     char codigo[10] = "A01";
@@ -32,7 +32,7 @@ int main() {
     scanf ("%s", &codigo);
 
     printf ("Digite o nome da cidade:\n");
-    scanf (" %20[^\n]", &cidade);            //Especificar utilizado para que o compilador possa ler o espaço entre as palavras.
+    scanf (" %20[^\n]", &cidade);            //Especificador utilizado para que o compilador possa ler o espaço entre as palavras.
 
     printf ("Digite a população:\n");
     scanf ("%f", &populacao);
@@ -48,7 +48,7 @@ int main() {
 
     printf ("\n");
 
-    printf ("Carta cadastrada com sucesso!\n\n");
+    printf ("Carta cadastrada com sucesso!\n\n");  //Impressão das informações cadastradas.
 
     printf ("Informações da carta:\n\n Estado: %c\n Código: %s\n Cidade: %s\n Populacao: %.3f habitantes\n Área: %.1f Km²\n PIB: R$ %.1f\n Pontos Turisticos: %d\n" , estado, codigo, cidade, populacao, area, pib, turismo);
 
