@@ -6,20 +6,24 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    char cidade[30];
-    char estado = 'A';
-    int carta = 1;
+
+    //Váriaveis necessárias criadas e inicializadas (=).
+
+    char estado = 'A';            //Estado designado por uma letra.
+    char cidade[30] = "Campinas"; 
+    int carta = 1;                //Numeração da carta.
     char codigo[10] = "A01";
-    char nome[30] = "Ribeirão Preto";
     float populacao = 728.400;
     float area = 650.9;
-    float pib = 39.955571;
+    float pib = 19700000;
     int turismo = 2;
     float densidade = 8101.19;
     float PIB = 56749;
-    float divisao1, divisao2;
+    float divisao1, divisao2;     //Váriavel para que possa ser feito o calculo da densidade e do PIB per capita.
 
-    printf ("Informe os dados da %dª carta:\n", carta);
+    printf ("***Cadastro de cartas Super Trunfo***\n");
+
+    printf ("Informe os dados da %dª carta:\n", carta); 
 
     printf ("Digite o estado:\n");
     scanf ("%c", &estado);
@@ -28,8 +32,7 @@ int main() {
     scanf ("%s", &codigo);
 
     printf ("Digite o nome da cidade:\n");
-    fflush(stdin);
-    scanf (" %20[^\n]", &cidade);
+    scanf (" %20[^\n]", &cidade);            //Especificar utilizado para que o compilador possa ler o espaço entre as palavras.
 
     printf ("Digite a população:\n");
     scanf ("%f", &populacao);
@@ -47,14 +50,14 @@ int main() {
 
     printf ("Carta cadastrada com sucesso!\n\n");
 
-    printf ("Informações da carta:\n Estado: %c\n Código: %s\n Nome: %s\n Populacao: %.3f habitantes\n Área: %.1f Km²\n PIB: %.1f bilhões de reais\n Pontos Turisticos: %d\n" , estado, codigo, cidade, populacao, area, pib, turismo);
+    printf ("Informações da carta:\n\n Estado: %c\n Código: %s\n Cidade: %s\n Populacao: %.3f habitantes\n Área: %.1f Km²\n PIB: R$ %.1f\n Pontos Turisticos: %d\n" , estado, codigo, cidade, populacao, area, pib, turismo);
 
     divisao1 = (float) pib / populacao;  //Float foi utilizado para forçar (casting) o valor em ponto flutuante.    
     divisao2 = (float) populacao / area;
 
-    printf ("PIB per capita: %.4f\n", divisao1);
+    printf ("PIB per capita: %.2f\n", divisao1);
 
-    printf ("Densidade: %.4f\n", divisao2);
+    printf ("Densidade: %.1f\n", divisao2);
 
 
 
