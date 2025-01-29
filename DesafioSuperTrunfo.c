@@ -7,8 +7,10 @@ int main(){
     char cidade[20] = "Ribeirão-Preto";
     int populacao = 698642;
     float area = 650.9;
-    float pib = 55.484;
+    float pib = 4.209;
     int turismo = 39;
+    float densidade;
+    float PIB; // PIB per capita.
 
     // Variáveis cadastradas e valores inicializados.
 
@@ -31,7 +33,7 @@ int main(){
     printf("Nome da cidade:\n");
     scanf("%s", &cidade);
 
-    printf("Polução (Sem pontos ou vírgulas):\n");
+    printf("População (Sem pontos ou vírgulas):\n");
     scanf("%d", &populacao);
 
     printf("Área:\n");
@@ -43,6 +45,9 @@ int main(){
     printf("Quantidade de pontos turísticos:\n");
     scanf("%d", &turismo);
 
+densidade = (float) populacao / area; // Cast utilizado para forçar uma mudança da váriavel int para float.
+PIB = (float) pib / populacao; // PIB per capita.
+
         printf("Carta cadastrada com sucesso!!\n\n");
 
         printf("Informações da carta:\n");
@@ -52,8 +57,10 @@ int main(){
         printf("Nome da cidade: %s\n", cidade);
         printf("População: %d mil habitantes\n", populacao);
         printf("Área: %.1f Km²\n", area);
-        printf("PIB: R$ %.3f\n", pib);
+        printf("PIB: R$ %.3f \n", pib);
         printf("Pontos turísticos: %d\n", turismo);
+        printf("Densidade populacional: %.2f habitantes por Km²\n", densidade);
+        printf("PIB per capita: %.3f\n", PIB);
 
 
 return 0;
