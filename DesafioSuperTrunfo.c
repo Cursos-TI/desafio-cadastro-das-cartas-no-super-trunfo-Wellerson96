@@ -45,6 +45,8 @@ int main(){
     printf("Quantidade de pontos turísticos:\n");
     scanf("%d", &turismo);
 
+    printf("\n");
+
 densidade = (float) populacao / area; // Cast utilizado para forçar uma mudança da váriavel int para float.
 PIB = (float) pib / populacao; // PIB per capita.
 
