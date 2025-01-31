@@ -140,13 +140,13 @@ double superpoder, superpoder1; // Variável criada para efetuar o calculo do su
 superpoder = populacao + area + pib + turismo + densidade + PIB;
 superpoder1 = populacao1 + area1 + pib1 + turismo1 + densidade1 + PIB1;
 
-printf("%s = %f\n", cidade, superpoder);
-printf("%s = %f\n\n", cidade1, superpoder1);
+printf("%s = %.2f\n", cidade, superpoder);
+printf("%s = %.2f\n\n", cidade1, superpoder1);
 
         printf("Superpoder: %s > %s = %d\n", cidade, cidade1, superpoder > superpoder1);
 
 
-        
+
 
 return 0;
 
