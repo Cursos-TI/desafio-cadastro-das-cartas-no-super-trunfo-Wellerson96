@@ -7,7 +7,7 @@ int main(){
     char cidade[20] = "Ribeirão-Preto";
     int populacao = 698642;
     float area = 650.9;
-    double pib = 4209742708;
+    double pib = 38764088492.22;
     int turismo = 39;
     float densidade;
     double PIB = (float) pib / populacao; // PIB per capita.
@@ -19,7 +19,7 @@ int main(){
     char cidade1[20];
     int populacao1;
     float area1;
-    double pib1 = 4149388339;
+    double pib1 = 22463442818.96;
     int turismo1;
     float densidade1;
     double PIB1 = (float) pib1 / populacao1; // PIB per capita.
@@ -71,10 +71,10 @@ int main(){
         printf("Nome da cidade: %s\n", cidade);
         printf("População: %d mil habitantes\n", populacao);
         printf("Área: %.1f Km²\n", area);
-        printf("PIB: R$ %.1f\n", pib);
+        printf("PIB: R$ %.2f\n", pib);
         printf("Pontos turísticos: %d\n", turismo);
         printf("Densidade populacional: %.2f habitantes por Km²\n", densidade);
-        printf("PIB per capita: %.1f\n", PIB);
+        printf("PIB per capita: %.2f\n", PIB);
 
         printf("\n");
 
@@ -115,10 +115,10 @@ int main(){
         printf("Nome da cidade: %s\n", cidade1);
         printf("População: %d mil habitantes\n", populacao1);
         printf("Área: %.1f Km²\n", area1);
-        printf("PIB: R$ %.1f\n", pib1);
+        printf("PIB: R$ %.2f\n", pib1);
         printf("Pontos turísticos: %d\n", turismo1);
         printf("Densidade populacional: %.2f habitantes por Km²\n", densidade1);
-        printf("PIB per capita: %.1f\n", PIB1);
+        printf("PIB per capita: %.2f\n", PIB1);
 
 return 0;
 
