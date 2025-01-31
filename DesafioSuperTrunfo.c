@@ -28,11 +28,15 @@ int main(){
 
     printf("***BEM VINDO AO JOGO SUPER TRUNFO TEMA PAÍSES!!***\n\n");
 
+    //Apresentação e algumas instruções sobre o jogo.
+
     printf("Nesse primeiro momento iremos realizar o cadastro das cartas com as seguintes informações:\n");
     printf("Estado. Caracterizado por uma letra de A a H.\nCódigo da carta. Contendo a letra do estado seguido de um numero de 01 a 04.\n");
     printf("Nome da cidade, população, área em Km², PIB e quantidade de pontos turísticos.\n\n");
 
     printf("Preparado? Vamos começar!!\n\n");
+
+    //Nesse passo o usuário irá digitar as informações das cartas.
 
     printf("Por favor, digite os dados da 1ª carta:\n");
 
@@ -58,6 +62,8 @@ int main(){
     scanf("%d", &turismo);
 
     printf("\n");
+
+    //Agora serão usadas as informações digitadas para que o sistema efetue o calculo da densidade e PIB per capita.
 
         densidade = (float) populacao / area; // Cast utilizado para forçar uma mudança da váriavel int para float.
         PIB = (float) pib / populacao; // PIB per capita.
