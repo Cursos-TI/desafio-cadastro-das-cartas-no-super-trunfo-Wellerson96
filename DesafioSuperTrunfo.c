@@ -69,12 +69,12 @@ int main(){
         printf("Estado: %c\n", estado);
         printf("Código da carta: %s\n", codigo);
         printf("Nome da cidade: %s\n", cidade);
-        printf("População: %d mil habitantes\n", populacao);
+        printf("População: %d habitantes\n", populacao);
         printf("Área: %.1f Km²\n", area);
         printf("PIB: R$ %.2f\n", pib);
         printf("Pontos turísticos: %d\n", turismo);
         printf("Densidade populacional: %.2f habitantes por Km²\n", densidade);
-        printf("PIB per capita: %.2f\n", PIB);
+        printf("PIB per capita: R$ %.2f\n", PIB);
 
         printf("\n");
 
@@ -113,12 +113,37 @@ int main(){
         printf("Estado: %c\n", estado1);
         printf("Código da carta: %s\n", codigo1);
         printf("Nome da cidade: %s\n", cidade1);
-        printf("População: %d mil habitantes\n", populacao1);
+        printf("População: %d habitantes\n", populacao1);
         printf("Área: %.1f Km²\n", area1);
         printf("PIB: R$ %.2f\n", pib1);
         printf("Pontos turísticos: %d\n", turismo1);
         printf("Densidade populacional: %.2f habitantes por Km²\n", densidade1);
-        printf("PIB per capita: %.2f\n", PIB1);
+        printf("PIB per capita: R$ %.2f\n", PIB1);
+
+        printf("\n");
+
+printf("Pronto! Agora que foram efetuados os cadastros das cartas iremos fazer a comparação das características para ver qual a carta vencedora.\n\n");
+
+printf("Se o resultado for 1 a primeira carta vence, se for 0, a segunda.\n\n");
+
+        printf("População: %s > %s = %d\n", cidade, cidade1, populacao > populacao1);
+        printf("Área: %s > %s = %d\n", cidade, cidade1, area > area1);
+        printf("PIB: %s > %s = %d\n", cidade, cidade1, pib > pib1);
+        printf("Pontos túristicos: %s > %s = %d\n", cidade, cidade1, turismo > turismo1);
+        printf("Densidade: %s > %s = %d\n", cidade, cidade1, densidade < densidade1);
+        printf("PIB per capita: %s > %s = %d\n\n", cidade, cidade1, PIB > PIB1);
+
+printf("Agora será calculado o superpoder de cada carta, que se refere a soma de todos os seus atributos.");
+
+double superpoder, superpoder1;
+
+superpoder = populacao + area + pib + turismo + densidade + PIB;
+superpoder1 = populacao1 + area1 + pib1 + turismo1 + densidade1 + PIB1;
+
+printf("%s = %f", cidade, superpoder);
+printf("%s = %f", cidade1, superpoder1);
+
+        printf("Superpoder: %s > %s = %d\n\n", cidade, cidade1, superpoder > superpoder1);
 
 return 0;
 
