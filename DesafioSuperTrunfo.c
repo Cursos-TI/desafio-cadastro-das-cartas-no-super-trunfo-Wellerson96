@@ -130,7 +130,7 @@ printf("Se o resultado for 1 a primeira carta vence, se for 0, a segunda.\n\n");
         printf("Área: %s > %s = %d\n", cidade, cidade1, area > area1);
         printf("PIB: %s > %s = %d\n", cidade, cidade1, pib > pib1);
         printf("Pontos túristicos: %s > %s = %d\n", cidade, cidade1, turismo > turismo1);
-        printf("Densidade: %s > %s = %d\n", cidade, cidade1, densidade < densidade1);
+        printf("Densidade: %s < %s = %d\n", cidade, cidade1, densidade < densidade1);
         printf("PIB per capita: %s > %s = %d\n\n", cidade, cidade1, PIB > PIB1);
 
 printf("Agora será calculado o superpoder de cada carta, que se refere a soma de todos os seus atributos.\n\n");
